@@ -1,0 +1,298 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body to use flexbox for layout */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Wrapper to ensure main content takes up available space */
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Basic styling for the header */
+header {
+  background-color: #328ba8;
+  color: #ffffff;
+  padding: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem; /* Decreased padding */
+}
+
+header .logo {
+  max-width: 70px; /* Adjust as needed */
+  height: auto;
+  padding: 0.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  background-color: #26d7ff;
+  color: #000000;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Styling for pages */
+.page {
+  display: none;
+  text-align: center;
+  padding: 4rem 0;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  background-image: url("background.png");
+  min-height: 100vh;
+}
+
+.page h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+}
+.page .btn {
+  background-color: #328ba8;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 2rem ;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page .btn:hover {
+  background-color: #26d7ff;
+  color: #000000;
+}
+
+.page.active {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Specific styles for each section */
+#home {
+  background-image: url("bg1.jpg");
+}
+
+#classes {
+  background-image: url("bg2.jpg");
+}
+
+#membership {
+  background-image: url("bg3.jpg");
+}
+
+#contact {
+  background-image: url("bg4.jpg");
+}
+
+/* Styling for the classes section */
+#classes h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.class-list {
+  display: grid;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 1rem auto;
+  color: rgb(255, 255, 255);
+
+}
+
+.class {
+  background-color: rgba(84, 84, 84, 0.5); /* 0.5 is the alpha value, adjust it to control transparency */
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+
+.class:hover {
+  transform: translateY(-5px);
+}
+
+.class h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.class p {
+  font-size: 1.1rem;
+}
+
+/* Styling for the membership section */
+#membership h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#membership ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#membership ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for the contact section */
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  background-color: rgba(84, 84, 84, 0.5);
+  border-radius: 10px;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact form button {
+  background-color: #328ba8;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 2rem ;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #26d7ff;
+  color: #000000;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #328ba8;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Import Google Font (e.g., Lato) */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/* Apply font-family globally */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Header font styling */
+header h1 {
+  font-family: lato, sans-serif; 
+}
+
+/* Navigation links font styling */
+nav ul li a {
+  font-family: "Lato", sans-serif; 
+}
+
+/* Headings in sections */
+h2 {
+  font-family: "Lato", sans-serif; 
+}
+
+h3 {
+  font-family: "Lato", sans-serif; 
+}
+
+/* Paragraph font styling */
+p {
+  font-family: "Lato", sans-serif; 
+}
+
+/* Button font styling */
+.btn {
+  font-family: "Lato", sans-serif; 
+}

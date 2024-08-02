@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energize Fitness</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <img
+            src="Energize Fitness.png"
+            alt="Energize Fitness Logo"
+            class="logo"
+          />
+          <h1>Energize Fitness</h1>
+          <nav>
+            <ul>
+              <li><a href="#" onclick="showPage('home')">Home</a></li>
+              <li><a href="#" onclick="showPage('classes')">Classes</a></li>
+              <li>
+                <a href="#" onclick="showPage('membership')">Membership</a>
+              </li>
+              <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="page">
+        <div class="container">
+          <h1>Welcome to Energize Fitness</h1>
+          <p>
+            Your destination for health and wellness. Join us to transform your
+            fitness journey. your ultimate destination for health, wellness, and
+            fitness. At Energize Fitness, we believe that fitness is not just a
+            routine but a lifestyle that brings about positive transformations
+            in your mind, body, and soul.
+          </p>
+
+          <p>
+            Our state-of-the-art facilities, top-notch trainers, and variety of
+            classes provide you with the perfect environment to achieve your
+            fitness goals. Whether you are looking to lose weight, build muscle,
+            or improve flexibility, we have something for everyone.
+          </p>
+
+          <p>
+            Energize Fitness is more than just a gym. It is a community of
+            like-minded individuals who are passionate about health and fitness.
+            Join us and be a part of this amazing community. Together, we can
+            achieve great things.
+          </p>
+
+          <a href="#" class="btn">Join Us</a>
+        </div>
+      </section>
+
+      <section id="classes" class="page">
+        <div class="container">
+          <h2>Classes</h2>
+          <div class="class-list">
+            <div class="class">
+              <h3>Yoga</h3>
+              <p>
+                A calming practice for body and mind, suitable for all levels.
+              </p>
+            </div>
+            <div class="class">
+              <h3>Zumba</h3>
+              <p>
+                Get moving with upbeat rhythms and dance. A fun way to stay fit
+                and energized.
+              </p>
+            </div>
+            <div class="class">
+              <h3>Boxing</h3>
+              <p>
+                Train like a champ with our boxing classes. Improve strength,
+                agility, and endurance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="membership" class="page">
+        <div class="container">
+          <h2>Membership</h2>
+          <p>
+            Choose from our flexible membership plans to suit your fitness
+            goals.
+          </p>
+          <ul>
+            <li>Basic Membership: Access to gym facilities.</li>
+            <li>
+              Premium Membership: Includes classes and personalized training.
+            </li>
+            <li>Corporate Membership: Special rates for corporate groups.</li>
+          </ul>
+          <a href="#" class="btn">Join Now</a>
+        </div>
+      </section>
+
+      <section id="contact" class="page">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Reach out to us for any inquiries or to schedule a consultation.
+          </p>
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea
+            ><br /><br />
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Energize Fitness. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
